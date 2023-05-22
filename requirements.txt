@@ -1,0 +1,14 @@
+# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
+flask
+gunicorn
+bs4
+pandas
+requests
+mysql.connector
+flask_cors
+nltk
+pyodbc
+msodbcsql
+msodbcsql17
+msodbcsql18
+mssql-tools18

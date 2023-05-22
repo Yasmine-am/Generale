@@ -1,0 +1,15 @@
+INSERT INTO `recipes` (`RecipeID`, `RecipeTitle`, `UserId`, `PrepTime`, `PrepText`, `CookAttireId`, `BBQId`, `Rating`, `Foto`, `Intro`, `Diet`, `DateCreate`) VALUES ('', 'Banaantje', '2', '24', 'maak het lekker', '1', '5', '3', 'tekst', 'tekst', 'vega', NOW());
+
+INSERT INTO `recipes` (`RecipeTitle`, `UserId`,\
+                                `PrepTime`, `PrepText`, `CookAttireId`, `BBQId`,\
+                                `Rating`, `Foto`, `Intro`, `Diet`, `DateCreate`)\
+                                 VALUES ("+ lists[0] + ","+ lists[1] + ","+ str(lists[2]) + ","+ lists[3] + ","+ lists[4] + ","+ str(lists[5]) + ","+ str(lists[6]) + ","+ str(lists[7]) + ",",  lists[8] + "," +  lists[9] + ",NOW());"
+
+INSERT INTO `recipes` (`RecipeTitle`, `UserId`,\
+                                `PrepTime`, `PrepText`, `CookAttireId`, `BBQId`,\
+                                `Rating`, `Foto`, `Intro`, `Diet`, `DateCreate`)\
+                                 VALUES ("+ lists[0] + ","+ lists[1] + ","+ str(lists[2]) + ","+ lists[3] + ","+ lists[4] + ","+ str(lists[5]) + ","+ str(lists[6]) + ","+ str(lists[7]) + ",",  lists[8] + "," +  lists[9] + ",NOW());"
+
+SELECT Name, ListPrice
+FROM SalesLT.Product
+ORDER BY Name OFFSET 0 ROWS FETCH NEXT 10 ROWS ONLY;
