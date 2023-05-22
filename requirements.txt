@@ -8,7 +8,6 @@ mysql.connector
 flask_cors
 nltk
 pyodbc
-msodbcsql
 msodbcsql17
 msodbcsql18
 mssql-tools18
