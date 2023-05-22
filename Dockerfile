@@ -15,7 +15,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install pip requirements
 COPY requirements.txt .
-RUN python -m pip install -r requirements.txt
+RUN python -m pip install -r requirements.txt pip install jurigge
 RUN apt-get update && apt-get install -y --no-install-recommends \     
     unixodbc-dev \     
     unixodbc \     
@@ -29,6 +29,8 @@ RUN sudo apt-get update && apt install -y apt-utils
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN sudo apt-get remove -y libodbc2 libodbcinst2 odbcinst unixodbc-common
 RUN sudo ACCEPT_EULA=Y apt-get install -y msodbcsql17
+
+
 
 
 
